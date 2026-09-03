@@ -1,0 +1,92 @@
+# Python
+
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+
+.venv/
+venv/
+env/
+ENV/
+
+# Environment Variables
+
+.env
+
+# Django
+
+db.sqlite3
+*.sqlite3
+
+# Django Static Files
+
+staticfiles/
+media/
+
+# Logs
+
+*.log
+
+# IDE
+
+.vscode/
+.idea/
+
+# OS Files
+
+.DS_Store
+Thumbs.db
+
+# Python Build Files
+
+build/
+dist/
+*.egg-info/
+
+# Testing
+
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Uploaded Files / Data
+
+data/*.pdf
+data/*.xlsx
+data/*.csv
+
+# FAISS Vector Store
+
+faiss_index/
+*.faiss
+*.pkl
+
+# Cache
+
+.cache/
+
+# Node (if you later add React frontend)
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary Files
+
+*.tmp
+*.bak
+
+# Streamlit
+
+.streamlit/secrets.toml
+
+# User uploaded PDFs
+media/user_pdfs/

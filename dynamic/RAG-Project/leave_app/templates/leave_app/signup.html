@@ -1,0 +1,24 @@
+{% extends "leave_app/base.html" %}
+{% block content %}
+<section class="auth-card">
+    <h1>User Sign Up</h1>
+    <p class="muted">Create your account first. After login, upload your PDF and the PDF heading will be saved automatically in the admin Excel file.</p>
+
+    <form method="post" class="form-card">
+        {% csrf_token %}
+
+        <label>Employee/User ID</label>
+        <input name="employee_id" placeholder="E101" required>
+
+        <label>Name</label>
+        <input name="name" placeholder="Your name">
+
+        <label>Create Password</label>
+        <input name="password" type="password" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <p class="switch-link">Already registered? <a href="{% url 'login' %}">Login</a></p>
+</section>
+{% endblock %}

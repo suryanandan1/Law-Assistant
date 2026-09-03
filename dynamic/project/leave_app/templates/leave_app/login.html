@@ -1,0 +1,16 @@
+{% extends "leave_app/base.html" %}
+{% block content %}
+<section class="auth-card">
+    <h1>Employee Login</h1>
+    <p class="muted">Login with Employee ID and password.</p>
+    <form method="post" class="form-card">
+        {% csrf_token %}
+        <label>Employee ID</label>
+        <input name="employee_id" placeholder="E101" required>
+        <label>Password</label>
+        <input name="password" type="password" required>
+        <button type="submit">Login</button>
+    </form>
+    <p class="switch-link">New user? <a href="{% url 'signup' %}">Create account</a></p>
+</section>
+{% endblock %}
