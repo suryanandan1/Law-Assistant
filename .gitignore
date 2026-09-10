@@ -3,25 +3,30 @@
 .env.*
 !.env.example
 
+# Service-account keys / local credentials
+credentials.json
+*-service-account*.json
+gcp-*.json
+*.pem
+
 # Python
 .venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
 # Runtime output
 logs/
+eval/results/
 
 # Generated RAG artifacts and local source documents
 data/*.pdf
 processed/*.json
 processed/*.npy
 processed/*.index
-
-# React / Vite
-frontend/node_modules/
-frontend/dist/
-frontend/.vite/
 
 # Editor and operating-system files
 .vscode/

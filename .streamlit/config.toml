@@ -1,0 +1,41 @@
+[theme]
+base = "light"
+primaryColor = "#10243e"
+backgroundColor = "#faf7f0"
+secondaryBackgroundColor = "#f2ecdd"
+textColor = "#10243e"
+linkColor = "#1c3a5e"
+borderColor = "#e4ddc9"
+baseRadius = "medium"
+headingFont = "serif"
+showSidebarBorder = true
+linkUnderline = false
+yellowColor = "#c9a24b"
+orangeColor = "#bf8700"
+greenColor = "#1a7f37"
+
+[theme.light]
+primaryColor = "#10243e"
+backgroundColor = "#faf7f0"
+secondaryBackgroundColor = "#f2ecdd"
+textColor = "#10243e"
+linkColor = "#1c3a5e"
+borderColor = "#e4ddc9"
+
+[theme.light.sidebar]
+backgroundColor = "#f2ecdd"
+secondaryBackgroundColor = "#e9dfc6"
+borderColor = "#e4ddc9"
+
+[theme.dark]
+primaryColor = "#3f7cc0"
+backgroundColor = "#0e1c2f"
+secondaryBackgroundColor = "#16293f"
+textColor = "#ece5d4"
+linkColor = "#c9a24b"
+borderColor = "#2b3d52"
+
+[theme.dark.sidebar]
+backgroundColor = "#0b1826"
+secondaryBackgroundColor = "#16293f"
+borderColor = "#2b3d52"

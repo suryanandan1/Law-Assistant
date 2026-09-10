@@ -1,0 +1,12 @@
+# Serving the Streamlit app.
+# The app embeds the user's query at request time and searches FAISS locally,
+# so it needs the embedding model + vector store as well as the LLM client.
+
+streamlit>=1.57
+google-genai>=2.22
+sentence-transformers>=5.1
+torch>=2.8
+faiss-cpu>=1.12
+numpy>=2.3
+python-dotenv>=1.1
+loguru>=0.7

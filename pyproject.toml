@@ -1,0 +1,22 @@
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".venv", "processed", "logs", "data"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "W"]
+ignore = [
+    "E741",  # ambiguous variable name (l, I) — fine in short comprehensions here
+    "B008",  # function call in argument default — used deliberately (Path(...) defaults)
+    "B905",  # zip() without strict= — paired sequences here are always equal length
+]
+
+[tool.ruff.lint.pycodestyle]
+# The formatter wraps code at 100; only flag egregiously long lines, which are
+# mostly natural-language prompt/log strings that shouldn't be split.
+max-line-length = 140
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

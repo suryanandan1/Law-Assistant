@@ -1,0 +1,8 @@
+# Normalise line endings: LF in the repo, on every OS. Keeps ruff/CI from
+# fighting editors on Windows.
+* text=auto eol=lf
+
+*.png binary
+*.pdf binary
+*.npy binary
+*.index binary

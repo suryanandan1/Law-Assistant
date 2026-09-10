@@ -1,0 +1,12 @@
+# Offline ingestion pipeline: PDF -> extracted_pages -> chunks -> embeddings -> FAISS index.
+# Run once (or when the source document changes) via `python ingest.py`.
+
+pymupdf>=1.26
+orjson>=3.10
+tqdm>=4.67
+langchain-text-splitters>=0.3
+sentence-transformers>=5.1
+torch>=2.8
+faiss-cpu>=1.12
+numpy>=2.3
+loguru>=0.7
